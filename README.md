@@ -36,10 +36,6 @@ Esse projeto é um site simples que te ajuda a encontrar as receitas mais delici
 
 **Vamos cozinhar juntos?** ️
 
-**Dica:** Para aprender mais sobre HTML, CSS e JavaScript, você pode acessar os seguintes recursos:
-* **Alura**[https://www.youtube.com/@alura/featured](https://www.youtube.com/@alura/featured)
-* **Curso em video** [https://www.cursoemvideo.com](https://www.cursoemvideo.com)
-
 **Contribuições:**
 
 Se você quiser contribuir para este projeto, fique à vontade para abrir um pull request! 

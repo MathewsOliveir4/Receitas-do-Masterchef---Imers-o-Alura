@@ -1,0 +1,146 @@
+/* Importação da fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+/* Definição de variáveis CSS para cores principais */
+:root {
+    --primary-color: #30475E;
+    --text-color: #45474B;
+    --background-color: #F5F7F8;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-image: url('https://telefe-static.akamaized.net/media/18217010/tlf_branding_digital_thum-3.jpg?width=888&height=500&mode=crop');
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos toda a altura da viewport */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+}
+
+/* Estilos para o título principal */
+h1 {
+    font-size: 2.5rem;
+    color: #fefefe;
+    text-align: center;
+    letter-spacing: 0.4rem; /* Espaçamento entre as letras */
+    margin: 3rem 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao texto */
+}
+
+/* Estilos para a seção de busca */
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* Estilos para o campo de entrada de busca */
+.search-section input {
+    width: 30rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Estilos para o botão de busca */
+.search-section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s; /* Transição suave para efeitos hover */
+}
+
+/* Efeito hover para o botão de busca */
+.search-section button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para a seção de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem;
+    max-height: 46vh; /* Altura máxima de 46% da altura da viewport */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+    background-color: var(--background-color);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para cada item de resultado */
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #222831;
+    margin: 0.5rem 0;
+}
+
+/* Estilos para os links dentro dos itens de resultado */
+.item-resultado a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+/* Efeito hover para os links */
+.item-resultado a:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* Estilos para a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: var(--text-color);
+    margin: 0.5rem 0;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; letter-spacing: 0.2rem; }
+    .search-section input { width: 25rem; }
+    .resultados-pesquisa { width: 90%; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.8rem; letter-spacing: 0.1rem; }
+    .search-section input { width: 90%; }
+    .search-section button { font-size: 0.9rem; }
+    .item-resultado h2 { font-size: 1.1rem; }
+}

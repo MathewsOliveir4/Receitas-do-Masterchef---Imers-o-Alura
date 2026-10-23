@@ -144,3 +144,11 @@ footer {
     .search-section button { font-size: 0.9rem; }
     .item-resultado h2 { font-size: 1.1rem; }
 }
+/* Imagens das receitas não passam da largura do cartão (bom no celular) */
+.item-resultado img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
